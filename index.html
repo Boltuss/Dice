@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dicee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <h1>Refresh Me!</h1>
+    <div class="container">
+      <div class="p1">
+        <p class="playerone">Player 1!</p>
+        <img src="./Images/dice6.png" alt="dice" class="img1">
+      </div>
+
+      <div class="p2">
+        <p class="playertwo">Player 2!</p>
+        <img src="./Images/dice6.png" alt="dice" class="img1">
+      </div>
+    </div>
+
+    <div class="btndiv" id="btnn"><button type="button" class="btn"> Roll The Dice!</button></div>
+
+
+    <script>
+      function reload() {
+        window.location.reload();
+      }
+
+      document.getElementById('btnn').onclick = reload;
+    </script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
